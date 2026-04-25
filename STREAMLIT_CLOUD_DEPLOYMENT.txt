@@ -1,0 +1,180 @@
+================================================================================
+STREAMLIT CLOUD DEPLOYMENT GUIDE
+================================================================================
+
+🎯 OBJECTIF: Déployer l'app Streamlit sur Streamlit Cloud
+   URL Public: https://[username]-ear-diagnostic-system.streamlit.app
+   Disponible dimanche 27 avril pour démo
+
+================================================================================
+ÉTAPE 1: PRISE EN MAIN (5 MINUTES)
+================================================================================
+
+✅ GitHub Repo créé:
+   https://github.com/mrkleinemmanuel24-hub/ear-diagnostic-system
+
+✅ Code déjà pushé:
+   - streamlit_app.py (application principale)
+   - dashboard_nathalie.py (dashboard)
+   - generate_master_document.py (générateur)
+   - requirements.txt (dépendances)
+   - .streamlit/config.toml (configuration)
+
+================================================================================
+ÉTAPE 2: DÉPLOYER SUR STREAMLIT CLOUD (2 MINUTES)
+================================================================================
+
+1. Aller sur: https://streamlit.io/cloud
+
+2. Cliquer "Sign in with GitHub"
+   (Utiliser: mrkleinemmanuel24-hub)
+
+3. Cliquer "New app"
+
+4. Remplir:
+   - Repository: mrkleinemmanuel24-hub/ear-diagnostic-system
+   - Branch: main
+   - Main file path: streamlit_app.py
+
+5. Cliquer "Deploy"
+   (Attendre 1-2 minutes)
+
+6. URL générée:
+   https://[hash]-ear-diagnostic-system.streamlit.app
+
+================================================================================
+ÉTAPE 3: AJOUTER LA CLÉ API (1 MINUTE)
+================================================================================
+
+Après déploiement:
+
+1. Cliquer ⚙️ (Settings) → Secrets
+
+2. Ajouter:
+   ANTHROPIC_API_KEY = [Votre clé API Anthropic sk-ant-...]
+   (À obtenir auprès d'Emmanuel)
+
+3. Cliquer "Save"
+
+4. L'app redémarrera automatiquement ✅
+
+================================================================================
+ÉTAPE 4: TESTER (2 MINUTES)
+================================================================================
+
+1. Ouvrir URL de l'app
+
+2. Faire un diagnostic test (remplir quelques questions)
+
+3. Cliquer "Générer Rapport"
+
+4. Vérifier que le rapport s'affiche
+
+5. Si "Secret not found" error:
+   → Vérifier étape 3 (secrets ajoutés)
+   → Attendre 30 sec
+   → Refresh page
+
+================================================================================
+POUR DIMANCHE 27 AVRIL 15:00
+================================================================================
+
+Option A (RECOMMANDÉ - Pas de dépendance WiFi):
+   1. Tester l'app en local avant dimanche
+   2. Avoir un rapport pré-généré sauvegardé
+   3. Si WiFi fail dimanche: montrer le rapport pré-généré
+
+Option B (Avec Streamlit Cloud):
+   1. Ouvrir l'URL publique dimanche
+   2. Faire démo en live
+   3. Générer un rapport de test
+   4. Montrer: "C'est généré en 30 sec"
+
+PRÉFÉRENCE: Combo A+B
+   - Montrer en local (aucune dépendance réseau)
+   - Si envie: montrer aussi la version cloud
+   - Avoir PDF sauvegardé en backup
+
+================================================================================
+DÉPANNAGE
+================================================================================
+
+Q: "Secret not found / ANTHROPIC_API_KEY not found"
+R: 1. Vérifier secrets ajoutés correctement
+   2. Attendre 1 minute
+   3. Cliquer "Reboot app"
+   4. Refresh page
+
+Q: "Module anthropic not found"
+R: 1. Vérifier requirements.txt est dans le repo
+   2. Attendre ~2 min pour rebuild
+   3. "Reboot app" manually
+
+Q: "Port already in use" (local only)
+R: streamlit run streamlit_app.py --server.port 8502
+
+Q: "CORS error"
+R: Cliquer "Reboot app" dans settings
+
+================================================================================
+LANCER EN LOCAL SI STREAMLIT CLOUD DOWN
+================================================================================
+
+Backup: Toujours avoir une version locale prête
+
+```bash
+cd "/Users/emmanuelklein/EAR NATHALIE"
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+→ Ouvre http://localhost:8501
+→ Complètement local, zéro dépendance internet
+
+================================================================================
+RÉSUMÉ POUR DIMANCHE
+================================================================================
+
+PRÉPARATION (Samedi):
+  ☐ Tester local: streamlit run streamlit_app.py
+  ☐ Générer 1 rapport test
+  ☐ Sauvegarder le rapport en PDF
+  ☐ Vérifier secrets sur Streamlit Cloud
+  ☐ Ouvrir URL publique, tester une fois
+
+DIMANCHE 14:45:
+  ☐ Laptop: local app prête à lancer
+  ☐ Backup: Rapport PDF sauvegardé
+  ☐ Batterie: 100%
+  ☐ WiFi: Testé et fonctionnel
+
+DIMANCHE 15:00 - DÉMO:
+  Option 1 (SAFE): Lancer en local
+    $ streamlit run streamlit_app.py
+    → Zéro dépendance réseau
+
+  Option 2 (CLOUD): Montrer version publique
+    https://[hash]-ear-diagnostic-system.streamlit.app
+    → Wow factor: "C'est live sur internet"
+
+================================================================================
+APRÈS DIMANCHE
+================================================================================
+
+Si OUI (Scenario C):
+  ✅ L'app reste actif sur Streamlit Cloud
+  ✅ Peut être utilisée pour tous les prospects
+  ✅ Nathalie peut inviter DRH à faire le diagnostic
+
+Si NON:
+  ✅ Garder repo GitHub public
+  ✅ Déploiement peut être réactivé si elle change d'avis
+
+================================================================================
+
+URL REPO GITHUB:
+https://github.com/mrkleinemmanuel24-hub/ear-diagnostic-system
+
+(Après déploiement, URL Streamlit Cloud sera partagée ici)
+
+================================================================================
