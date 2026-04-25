@@ -1,0 +1,180 @@
+================================================================================
+QUICKSTART — EAR Diagnostic System v2.0
+================================================================================
+
+🎯 OBJECTIF: Avoir une application fonctionnelle dimanche pour Nathalie.
+
+================================================================================
+ÉTAPE 1: CONFIGURATION (5 minutes)
+================================================================================
+
+✅ Clé API Anthropic: Dans .env (déjà configurée)
+✅ Dépendances Python: requirements.txt (prêt)
+✅ Application Streamlit: streamlit_app.py (prêt)
+
+================================================================================
+ÉTAPE 2: LANCER L'APP (1 minute)
+================================================================================
+
+Option A — Locale:
+```bash
+cd "/Users/emmanuelklein/EAR NATHALIE"
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+→ Ouvre http://localhost:8501
+
+Option B — Via Python direct:
+```bash
+python3 -m streamlit run "/Users/emmanuelklein/EAR NATHALIE/streamlit_app.py"
+```
+
+Option C — Dashboard Nathalie:
+```bash
+streamlit run dashboard_nathalie.py
+```
+
+================================================================================
+ÉTAPE 3: TESTER (3 minutes)
+================================================================================
+
+1. Ouvrir app
+2. Cliquer "Diagnostic Complet"
+3. Remplir quelques réponses de test
+4. Cliquer "Générer Rapport"
+5. Voir le rapport généré en direct
+
+Résultat: Un rapport professionnel, rédigé en style "Nathalie", en 30 sec.
+
+================================================================================
+ÉTAPE 4: DIMANCHE 27 AVRIL (Présentation)
+================================================================================
+
+À 15:00 avec Nathalie:
+
+1. LIRE (10 min):
+   Ouvrir GRAND_DOCUMENT_PRESENTATION_2026.txt
+   Montrer la structure: Diagnostic → Leviers → Scenarios → Plan 12 mois
+
+2. DÉMONTRER (10 min):
+   - Ouvrir streamlit_app.py
+   - Faire un diagnostic de test
+   - Générer un rapport (show 30-second magic)
+   - Montrer le PDF téléchargeable
+
+3. EXPLIQUER (10 min):
+   "C'est pas de la tech, c'est une libération."
+   - Machine fait relance alumni
+   - Cherche DRH pendant qu'elle coache
+   - Calcule ROI temps réel
+   - Elle libère les 75H/week
+
+4. DÉCIDER (5 min):
+   - OUI → Lundi: Kick-off VA hiring
+   - RÉFLEXION → Jeudi: Follow-up
+   - NON → C'est OK, porte restante ouverte
+
+================================================================================
+FILES & STRUCTURE
+================================================================================
+
+📄 DOCUMENTS TEXTE:
+   ✅ RAPPORT_STRATEGIQUE_COMPLET_2026.txt (64KB) — Diagnostic complet
+   ✅ GRAND_DOCUMENT_PRESENTATION_2026.txt (20KB) — Présentation dimanche
+
+💻 CODE PYTHON:
+   ✅ streamlit_app.py — Application principale (8 blocs, diagnostic, génération)
+   ✅ dashboard_nathalie.py — Dashboard pour tracker les prospects
+   ✅ generate_master_document.py — Générateur de documents via Claude API
+
+📋 CONFIG:
+   ✅ requirements.txt — Dépendances (streamlit, anthropic, reportlab)
+   ✅ .env — Clé API Anthropic (configurée)
+   ✅ INSTRUCTIONS_DEPLOYMENT.md — Guide complet
+   ✅ README.md — Vue d'ensemble projet
+
+📊 DATA:
+   ✅ data/leads.csv — Auto-créé au premier diagnostic
+
+================================================================================
+WHAT'S INSIDE
+================================================================================
+
+L'Application Intègre:
+
+1. MATRICE D'INTELLIGENCE MÉTIER (Le "Cerveau"):
+   - 8 blocs de diagnostic
+   - 50+ variables
+   - Logique de scoring automatique
+   - Solutions basées sur 21 ans d'expertise
+
+2. GÉNÉRATEUR DE RAPPORTS (Claude API):
+   - Style "Nathalie" automatique (direct, expert, bienveillant)
+   - Data-driven (vraie math, ROI calculés)
+   - Structure: Diagnostic → Leviers → Scénarios → Plan 12 mois
+
+3. LEVIERS AUTOMATIQUEMENT IDENTIFIÉS:
+   1. Coaching Tarif: +30k€ (0H)
+   2. Master Classes: +48k€ (28H/an)
+   3. Alumni Activation: +91k€ (30H/an)
+   4. DRH B2B: +40k€ (20H/an)
+   5. EAR Formation: 98k€ (stable)
+   6. LinkedIn Ads: +14-25k€ (300€/mois)
+
+   TOTAL: 320-350k€ CA avec 50H/week durable
+
+4. AUTOMATISATION:
+   - CRM simple (CSV): leads auto-enregistrés
+   - Dashboard: Voir les prospects + urgence
+   - Export PDF: rapport téléchargeable
+
+================================================================================
+POINTS CLÉS POUR DIMANCHE
+================================================================================
+
+MESSAGE CLÉ:
+"C'est pas une tech qu'elle doit apprendre. C'est un collaborateur invisible."
+
+DÉMO:
+- Remplir 1-2 blocs de diagnostic (30 sec)
+- Cliquer "Générer" (5 sec d'attente)
+- BOOM: Rapport de 10 pages en style Nathalie
+- Montrer: "C'était 100% généré par IA"
+
+TIMING:
+- Dimanche 15:00: Réunion
+- Lundi 28 avril: Décision
+- Mardi 29 avril: Kick-off si OUI
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Q: "Clé API invalide"
+R: Vérifier .env contient la bonne clé (commence par sk-ant-)
+
+Q: "Module anthropic not found"
+R: pip install anthropic
+
+Q: "Streamlit not found"
+R: pip install -r requirements.txt
+
+Q: "Rapport ne génère pas"
+R: Vérifier connexion internet, clé API valide
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+☐ Test local (30 min): Lancer l'app, faire un diagnostic
+☐ Préparer présentation (1 heure): Lire documents, tester démo
+☐ Dimanche 15:00: Réunion avec Nathalie
+☐ Lundi 28 avril: Décision + Kick-off si OUI
+
+================================================================================
+GOOD LUCK! 🚀
+
+Le projet est complet et prêt. Dimanche va être spectaculaire.
+
+Questions? Contact: emmanuelklein24@gmail.com
+================================================================================
